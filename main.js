@@ -1,4 +1,4 @@
-function avaaSelaus(){
+function navigointi(){
     document.querySelector(".selaus").classList.toggle("nayta");
     document.querySelector(".navbar").classList.toggle("nayta");
 }
@@ -26,7 +26,10 @@ function avaaKukka4(){
     document.querySelector(".kukat_4_info").classList.toggle("nayta");
     
 }
+function viesti(){
+    document.querySelector(".laheta_viesti_tausta").classList.toggle("nayta");
 
+}
 
 
 

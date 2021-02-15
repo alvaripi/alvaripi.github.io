@@ -8,7 +8,7 @@
 
 }
 */
-
+/*Fontti*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 ul{
     padding: 0;
@@ -124,7 +124,7 @@ header .navbar li a:hover{
 .meista_otsikko
 {   
     padding-top: 120px;
-    font-family : "Cursive", Brush Script MT;
+    font-family: 'Dancing Script', cursive;
     font-size: 5em;
     color:white;
     /*position: centered;*/
@@ -149,7 +149,7 @@ header .navbar li a:hover{
 .kukat_otsikko
     {   
         padding-top: 120px;
-        font-family : "Cursive", Brush Script MT;
+        font-family: 'Dancing Script', cursive;
         font-size: 5em;
         /*position: centered;*/
         
@@ -201,6 +201,7 @@ header .navbar li a:hover{
    background-size: cover;
 
 }
+
 /*
 .card-title{
     font-family : "Cursive", Brush Script MT;
@@ -225,7 +226,8 @@ header .navbar li a:hover{
 .kukat_1_tausta.nayta, 
 .kukat_2_tausta.nayta, 
 .kukat_3_tausta.nayta,
-.kukat_4_tausta.nayta {
+.kukat_4_tausta.nayta,
+.laheta_viesti_tausta.nayta{
     
     position:fixed;
     display:flex;
@@ -288,13 +290,17 @@ iframe{
     width:90%; 
     height:500px; 
     border: none; 
+}
 
+.kartta{
+    padding:0;
 }
 
 
 
 .yhteystiedot{
     padding-top: 80px;
+    z-index:1;
 }
 
 textarea{
@@ -314,11 +320,21 @@ textarea{
     margin-bottom: 20px;
 }
 
+.laheta_viesti_tausta{
+    display:none;
+}
+
+.laheta_viesti_tausta.nayta{
+
+}
+
+
+/*
 
 .ota_yhteytta .nimi
 {   
     
-    padding-bottom: 10%;
+    padding-bottom: 50%;
 }
 
 .ota_yhteytta .sukunimi
@@ -543,11 +559,18 @@ textarea{
     }
 
 
+    iframe{
+        width:95%; 
+        height:400px; 
+    }
+
     .kukka_info_teksti{
         padding:0%;
     }
 
-
+.kukat_card{
+    padding-bottom:5%;
+}
 
 
 
@@ -557,7 +580,7 @@ textarea{
 @media (max-width: 400px){
     
     iframe{
-        width:200px; 
+        width:95%; 
         height:400px; 
     }
     
