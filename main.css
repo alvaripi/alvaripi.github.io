@@ -1,0 +1,657 @@
+/*
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family : "Poppins", sans-serfi;
+
+}
+*/
+ul{
+    padding: 0;
+
+}
+.etusivu
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.550) ), url(Aloitussivu2.jpg);
+    background-size: cover;
+    background-position: 50% 0;
+
+}
+.logo
+{
+    font-family : "Cursive", Brush Script MT;
+    color: white;
+    font-weight: 400;
+    font-size: 5em;
+    text-decoration : none;
+
+}
+
+
+.etusivu .esittelyteksti
+{
+    font-family : "Cursive", Brush Script MT;
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+    max-width: 600px;
+    text-decoration : none;
+    position: absolute;
+    bottom: 100px;
+    left: 130px;
+
+}
+/*
+.etusivu .esittelyteksti h2
+{
+    font-size: 5em;
+    color: white;
+
+}
+*/
+/*
+.etusivu .esittelyteksti p
+{
+
+
+}
+*/
+header
+{
+    box-sizing: border-box;
+    font-family : "Poppins", sans-serfi;
+
+    position : fixed;
+    /*
+    top: 0;
+    left: 0;
+    */
+    width: 100%;
+    padding: 8px 100px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*transition: 2.5s;*/
+    background : #103a0f;
+    opacity: 0.9;
+    
+}
+
+header .navbar
+{
+    position: relative;
+    display: flex;
+}
+
+header .navbar li
+{
+    list-style : none;
+    margin-left: 100px;
+    font-size: 2em;
+    
+
+}
+header .navbar li a
+{
+    text-decoration: none;
+    color:white;
+    font-weight: 300;
+}
+header .navbar li a:hover{
+    color: rgb(58, 58, 250);
+    
+}
+/*
+.meista
+{
+    padding-top: 300px;
+    padding-bottom: 300px;
+    padding-right: 400px;
+    padding-left: 400px;
+}
+*/
+.meista_otsikko
+{   
+    padding-top: 120px;
+    font-family : "Cursive", Brush Script MT;
+    font-size: 5em;
+    color:white;
+    /*position: centered;*/
+    
+}
+
+
+.meista_teksti
+{
+
+    position: relative;
+    font-size: 2em;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-right: 400px;
+    padding-left: 400px;
+    color: white;
+    
+}
+
+
+.kukat_otsikko
+    {   
+        padding-top: 120px;
+        font-family : "Cursive", Brush Script MT;
+        font-size: 5em;
+        /*position: centered;*/
+        
+    }
+
+.kukat_boots{
+    padding-top: 50px;
+    font-size: 1.5em;
+}
+
+.card{
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.500);
+}
+.kukat{
+    padding-bottom:2%;
+}
+.card-title{
+    text-decoration:solid;
+}
+.card-text{
+    padding-bottom:5%;
+}
+.kuva_henkilosto1{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    margin-right: 20%;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.500);
+}
+.henkilo_nimi{
+    padding-top:5%;
+    color:white;
+    text-decoration: underline;
+    
+    
+}
+.henkilo_teksti{
+    padding-bottom: 5%;
+    padding-right:13%;
+    padding-left:13%;
+    color:white;
+    font-size:1.5em;
+    
+
+}
+.taustakuva{
+   background:linear-gradient( rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300) ), url(tausta_kukka.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+/*
+.card-title{
+    font-family : "Cursive", Brush Script MT;
+    font-size: 20px;
+}
+
+*/
+.kuva_1,
+.kuva_2,
+.kuva_3,
+.kuva_4
+{
+    cursor:pointer;
+}
+.kukat_1_tausta, 
+.kukat_2_tausta, 
+.kukat_3_tausta,
+.kukat_4_tausta {
+    display:none;
+    
+}
+.kukat_1_tausta.nayta, 
+.kukat_2_tausta.nayta, 
+.kukat_3_tausta.nayta,
+.kukat_4_tausta.nayta {
+    
+    position:fixed;
+    display:flex;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.7);
+    width:100%;
+    height:100%;
+    text-align: center; 
+    z-index: 2;
+}
+.kukat_1_info.nayta,
+.kukat_2_info.nayta,
+.kukat_3_info.nayta,
+.kukat_4_info.nayta{
+    width: 70%;
+    height: 72.8%;
+    top:15%;
+    left:15%;
+    z-index: 3;
+    position : fixed;
+    display : flex;
+    justify-content:center;
+    align-items: center;
+    /*flex-direction: column;*/
+    background: white;
+    overflow-y:auto;
+    
+    
+}
+
+.kukka_kuva{
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.kukka_info_sulje{
+    position: absolute;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    background: none;
+    font-size:3.5em;
+    font-weight:bold;
+    right:2%;
+    top: 1%;
+    z-index:5;
+}
+.kukka_info_teksti{
+    padding:5%;
+}
+
+
+/*
+
+
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(0);
+/*
+transition: 200ms ease-in-out;
+border: 1px solid black;
+border-radius: 10px;
+*/
+/*
+z-index: 3;
+background-color: white;
+width: 500px;
+max-width: 80%;
+opacity:1;
+*/
+
+
+/**
+#tausta{
+    position:fixed;
+    /*opacity:0;
+    top:0;
+    left:0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    pointer-events: none;
+    
+}
+*/
+/*
+#tausta.aktiivinen{
+    opacity: 1;
+    pointer-events: all;
+}
+*/
+
+
+
+iframe{
+    width:90%; 
+    height:500px; 
+    border: none; 
+
+}
+
+
+
+.yhteystiedot{
+    padding-top: 80px;
+}
+
+textarea{
+
+    resize: none;
+    padding-bottom: 20%;
+}
+
+.ota_yhteytta
+{
+     
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.500);
+    
+}
+
+.ota_yhteytta h2{
+    margin-bottom: 20px;
+}
+
+
+.ota_yhteytta .nimi
+{   
+    
+    padding-bottom: 10%;
+}
+
+.ota_yhteytta .sukunimi
+{
+    padding-bottom: 2%;
+}
+
+.ota_yhteytta .laheta
+{
+    padding-bottom: 10%;
+}
+
+
+/** ei toimi
+.laheta
+{
+    cursor:pointer;
+}
+
+/*
+.kukat{
+/**
+    padding: 300px;
+    width: 80%;
+    
+    background: url(Puutausta.jpg);
+    background-size: flex;
+   
+    
+}
+
+/*
+.row{
+    display:flex;
+}
+.kuva_1{flex:0.5;
+ 
+}
+
+.kuva_2{flex:0.75;
+
+}
+*/
+
+
+@media (max-width: 1600px){
+    
+
+    header{
+        padding: 8px 100px;
+        opacity: 1.0;
+        
+    }
+
+    header .navbar
+    {
+        display: none;
+    }
+
+    header .navbar.nayta
+    {
+        width: 100%;
+        height: 220px;
+        position : fixed;
+        top: 135px;
+        left: 0;
+        display : flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        background: grey;
+        opacity: 0.9;
+        text-decoration: underline;
+    }
+    
+    header .navbar.nayta:hover{
+        color: rgb(58, 58, 250);
+    }
+
+    .selaus
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(selaus.png);
+        background-size  : 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor:pointer;
+    }
+    
+    .selaus.nayta
+    {
+        background: url(sulje.png);
+        background-size  : 35px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+
+    
+
+    .meista_teksti
+    {
+
+    position: relative;
+    font-size: 2.0em;
+    padding-top: 0px;
+    padding-bottom: 100px;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+    }
+
+    .kukat_boots{
+        padding-top: 50px;
+        font-size: 1.3em;
+    }
+
+    .kukka_info_sulje{
+        top:-2%;
+    }
+/*
+    .kukka_info_teksti{
+        padding:5%;
+        font-size:1em;
+    }
+    
+    /**
+    /**
+.meista
+    {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 150px;
+    padding-left: 150px;
+    }
+*/
+
+
+}
+
+@media (max-width: 1200px){
+    .kukka_info_sulje{
+        z-index:10;
+        color: white;
+    }
+}
+
+
+@media (max-width: 840px){
+    
+
+
+    
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+        opacity: 1.0;
+        height: 8%;
+    }
+
+
+    header .navbar.nayta
+    {
+        position : fixed;
+        width: 100%;
+        height: 170px;
+        top: 79px;
+        font-size: 0.8em;
+        opacity: 0.9;
+        
+
+    }
+
+.etusivu .esittelyteksti
+    {
+    font-family : "Cursive", Brush Script MT;
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+    max-width: 600px;
+    text-decoration : none;
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    font-size: 2.5em;
+    
+    }
+
+.logo
+{
+    font-family : "Cursive", Brush Script MT;
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+    text-decoration : none;
+
+}
+
+.meista_teksti
+{
+
+    position: relative;
+    font-size: 1.8em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+.ota_yhteytta{
+    padding-bottom: 20px;
+}
+
+.meista
+    {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 50px;
+    padding-left: 50px;
+    }
+
+    .kukka_info_teksti{
+        padding:0%;
+    }
+
+
+
+
+}
+
+
+@media (max-width: 400px){
+    
+    iframe{
+        width:200px; 
+        height:400px; 
+    }
+    
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+        opacity: 1.0;
+        height: 70px;
+    }
+    
+    .logo{
+        font-size: 2em;
+    }
+
+    header .navbar.nayta
+    {
+        position : fixed;
+        width: 100%;
+        height: 140px;
+        top: 70px;
+        font-size: 0.55em;
+        opacity: 0.9;
+        display: inline-block;
+        
+        
+
+    }
+
+    .selaus{
+        width: 30px;
+        height: 30px;
+    }
+    .etusivu .esittelyteksti
+    {
+        font-size: 2em;
+    }
+
+
+    .meista_teksti
+    {
+
+    position: relative;
+    font-size: 1.2em;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    }
+
+
+    .meista_otsikko
+    {
+        padding-top: 10px;
+    }
+
+    .kukka_info_teksti{
+        font-size: 0.8em;
+    }
+
+}
