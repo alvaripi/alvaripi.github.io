@@ -8,6 +8,8 @@
 
 }
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 ul{
     padding: 0;
 
@@ -20,14 +22,14 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.550) ), url(Aloitussivu2.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400) ), url(Aloitussivu2.jpg);
     background-size: cover;
     background-position: 50% 0;
 
 }
 .logo
 {
-    font-family : "Cursive", Brush Script MT;
+    font-family: 'Dancing Script', cursive;
     color: white;
     font-weight: 400;
     font-size: 5em;
@@ -38,10 +40,10 @@ ul{
 
 .etusivu .esittelyteksti
 {
-    font-family : "Cursive", Brush Script MT;
+    font-family: 'Dancing Script', cursive;
     color: white;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 2.9em;
     max-width: 600px;
     text-decoration : none;
     position: absolute;
@@ -279,46 +281,6 @@ header .navbar li a:hover{
 }
 
 
-/*
-
-
-position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%) scale(0);
-/*
-transition: 200ms ease-in-out;
-border: 1px solid black;
-border-radius: 10px;
-*/
-/*
-z-index: 3;
-background-color: white;
-width: 500px;
-max-width: 80%;
-opacity:1;
-*/
-
-
-/**
-#tausta{
-    position:fixed;
-    /*opacity:0;
-    top:0;
-    left:0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.7);
-    pointer-events: none;
-    
-}
-*/
-/*
-#tausta.aktiivinen{
-    opacity: 1;
-    pointer-events: all;
-}
-*/
 
 
 
@@ -516,7 +478,7 @@ textarea{
         padding-left: 20px;
         padding-right: 20px;
         opacity: 1.0;
-        height: 8%;
+        height: 60px;
     }
 
 
@@ -525,7 +487,7 @@ textarea{
         position : fixed;
         width: 100%;
         height: 170px;
-        top: 79px;
+        top: 68px;
         font-size: 0.8em;
         opacity: 0.9;
         
@@ -534,7 +496,7 @@ textarea{
 
 .etusivu .esittelyteksti
     {
-    font-family : "Cursive", Brush Script MT;
+    
     color: white;
     font-weight: 400;
     font-size: 3em;
@@ -549,10 +511,10 @@ textarea{
 
 .logo
 {
-    font-family : "Cursive", Brush Script MT;
+    
     color: white;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 2.7em;
     text-decoration : none;
 
 }
@@ -561,7 +523,7 @@ textarea{
 {
 
     position: relative;
-    font-size: 1.8em;
+    font-size: 1.5em;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-right: 20px;
@@ -577,13 +539,15 @@ textarea{
     {
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 0px;
+    padding-left: 0px;
     }
+
 
     .kukka_info_teksti{
         padding:0%;
     }
+
 
 
 
@@ -606,7 +570,7 @@ textarea{
     }
     
     .logo{
-        font-size: 2em;
+        font-size: 1.7em;
     }
 
     header .navbar.nayta
@@ -648,6 +612,14 @@ textarea{
     .meista_otsikko
     {
         padding-top: 10px;
+    }
+
+    .henkilo_teksti{
+        padding-bottom: 0%;
+        padding-right:0%;
+        padding-left:0%;
+        font-size:1.0em;
+
     }
 
     .kukka_info_teksti{
