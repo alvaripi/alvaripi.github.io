@@ -26,7 +26,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400) ), url(Aloitussivu2.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400) ), url(kuvat/Aloitussivu2.jpg);
     background-size: cover;
     background-position: 50% 0;
 
@@ -185,7 +185,8 @@ header .navbar li a:hover{
 .kukat_1_info.nayta,
 .kukat_2_info.nayta,
 .kukat_3_info.nayta,
-.kukat_4_info.nayta{
+.kukat_4_info.nayta
+{
     width: 70%;
     height: 72.8%;
     top:15%;
@@ -226,6 +227,7 @@ header .navbar li a:hover{
 
 
 
+
 /*MEISTÄ SIVU*/
 
 
@@ -251,7 +253,7 @@ header .navbar li a:hover{
     font-size:1.5em;
 }
 .taustakuva{
-   background:linear-gradient( rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300) ), url(tausta_kukka.jpg);
+   background:linear-gradient( rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300) ), url(kuvat/tausta_kukka.jpg);
    background-repeat: no-repeat;
    background-size: cover;
 
@@ -333,14 +335,28 @@ iframe{
 .ota_yhteytta h2{
     margin-bottom: 20px;
 }
-
+.ota_yhteytta{
+    margin-top:1%;
+}
 .laheta_viesti_tausta{
     display:none;
 }
 
 .ilmoitus.nayta{
-    width: 20%;
-    height: 20%;
+
+    margin-top: 50%;
+    margin-left:27%;
+    padding:1%;
+    background:white;
+    justify-content:center;
+    align-items: center;
+}
+
+
+/**
+.ilmoitus.nayta{
+    width: 500px;
+    height: 10%;
     top:40%;
     left:40%;
     z-index: 3;
@@ -348,9 +364,29 @@ iframe{
     display : flex;
     justify-content:center;
     align-items: center;
-    /*flex-direction: column;*/
-    background: white;
+    /*flex-direction: column;
+    background-color:white;
     overflow-y:auto;
+    margin: 0 auto;
+}
+*/
+.viesti h1{
+    font: 1.5em;
+    position: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.viesti_sulje{
+    position: absolute;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    background: none;
+    font-size:2em;
+    font-weight:bold;
+    right:2%;
+    top: -1%;
+    z-index:5;
 }
 
 
@@ -396,7 +432,7 @@ iframe{
         position: relative;
         width: 40px;
         height: 40px;
-        background: url(selaus.png);
+        background: url(kuvat/selaus.png);
         background-size  : 40px;
         background-repeat: no-repeat;
         background-position: center;
@@ -405,7 +441,7 @@ iframe{
     
     .selaus.nayta
     {
-        background: url(sulje.png);
+        background: url(kuvat/sulje.png);
         background-size  : 35px;
         background-repeat: no-repeat;
         background-position: center;
@@ -438,7 +474,12 @@ iframe{
     .kukka_info_sulje{
         top:-2%;
     }
-
+/*
+    .ilmoitus.nayta
+    {
+        left:35%;
+    }
+*/
 }
 
 @media (max-width: 1200px){
@@ -556,8 +597,18 @@ iframe{
         padding-bottom:5%;
     }
 
+    .ilmoitus.nayta{
+        padding:0%;
+        }
 
 
+
+}
+
+@media(max-width: 575px){
+    .ilmoitus.nayta{
+        margin-left:0;
+        }
 }
 
 

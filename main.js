@@ -28,9 +28,9 @@ function avaaKukka4(){
 }
 function viesti(){
     document.querySelector(".laheta_viesti_tausta").classList.toggle("nayta");
+    document.querySelector(".ilmoitus").classList.toggle("nayta");
 
 }
-
 
 
 
