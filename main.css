@@ -10,6 +10,10 @@
 */
 /*Fontti*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    scroll-behavior: smooth;
+}
 ul{
     padding: 0;
 
@@ -51,31 +55,13 @@ ul{
     left: 130px;
 
 }
-/*
-.etusivu .esittelyteksti h2
-{
-    font-size: 5em;
-    color: white;
 
-}
-*/
-/*
-.etusivu .esittelyteksti p
-{
-
-
-}
-*/
 header
 {
     box-sizing: border-box;
     font-family : "Poppins", sans-serfi;
-
     position : fixed;
-    /*
-    top: 0;
-    left: 0;
-    */
+    font-weight:0;
     width: 100%;
     padding: 8px 100px;
     z-index: 1;
@@ -112,15 +98,7 @@ header .navbar li a:hover{
     color: rgb(58, 58, 250);
     
 }
-/*
-.meista
-{
-    padding-top: 300px;
-    padding-bottom: 300px;
-    padding-right: 400px;
-    padding-left: 400px;
-}
-*/
+
 .meista_otsikko
 {   
     padding-top: 120px;
@@ -128,40 +106,39 @@ header .navbar li a:hover{
     font-size: 5em;
     color:white;
     /*position: centered;*/
-    
 }
-
 
 .meista_teksti
 {
-
     position: relative;
     font-size: 2em;
     padding-top: 50px;
     padding-bottom: 0px;
     padding-right: 400px;
     padding-left: 400px;
-    color: white;
-    
+    color: white;  
 }
 
 
-.kukat_otsikko
-    {   
-        padding-top: 120px;
-        font-family: 'Dancing Script', cursive;
-        font-size: 5em;
-        /*position: centered;*/
-        
-    }
+/*KUKAT SIVU*/
 
-.kukat_boots{
+
+
+.kukat_otsikko
+{   
+    padding-top: 120px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5em;
+    /*position: centered;*/   
+}
+
+.kukat_laatikot{
     padding-top: 50px;
     font-size: 1.5em;
 }
 
 .card{
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.500);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.150);
 }
 .kukat{
     padding-bottom:2%;
@@ -172,43 +149,8 @@ header .navbar li a:hover{
 .card-text{
     padding-bottom:5%;
 }
-.kuva_henkilosto1{
-    margin-top: 5%;
-    margin-left: 20%;
-    margin-bottom: 5%;
-    margin-right: 20%;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.500);
-}
-.henkilo_nimi{
-    padding-top:5%;
-    color:white;
-    text-decoration: underline;
-    
-    
-}
-.henkilo_teksti{
-    padding-bottom: 5%;
-    padding-right:13%;
-    padding-left:13%;
-    color:white;
-    font-size:1.5em;
-    
 
-}
-.taustakuva{
-   background:linear-gradient( rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300) ), url(tausta_kukka.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
 
-}
-
-/*
-.card-title{
-    font-family : "Cursive", Brush Script MT;
-    font-size: 20px;
-}
-
-*/
 .kuva_1,
 .kuva_2,
 .kuva_3,
@@ -284,7 +226,68 @@ header .navbar li a:hover{
 
 
 
+/*MEISTÄ SIVU*/
 
+
+.kuva_henkilosto1{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    margin-right: 20%;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.500);
+}
+.henkilo_nimi{
+    padding-top:5%;
+    color:white;
+    text-decoration: underline;
+    
+    
+}
+.henkilo_teksti{
+    padding-bottom: 5%;
+    padding-right:13%;
+    padding-left:13%;
+    color:white;
+    font-size:1.5em;
+}
+.taustakuva{
+   background:linear-gradient( rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300) ), url(tausta_kukka.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+/*YHTEYSTIEDOT SIVU*/
+
+
+.yhteystiedot{
+    padding-top: 80px;
+    padding-bottom:100px;
+    z-index:1;
+}
+
+.yhteystiedot_osoite,
+.yhteystiedot_aukiolo{
+    margin-left: 100px;
+    margin-right:100px;
+}
+.yhteystiedot_osoite{
+    margin-bottom:100px;
+
+}
+
+.yhteystiedot_info h2
+{
+    padding:10px;
+}
 
 iframe{
     width:90%; 
@@ -293,28 +296,39 @@ iframe{
 }
 
 .kartta{
-    padding:0;
+    padding-top:0;
+    padding-left:0;
+    padding-right:0;
+    padding-bottom:1%;
 }
 
 
 
-.yhteystiedot{
-    padding-top: 80px;
-    z-index:1;
-}
 
-textarea{
 
-    resize: none;
-    padding-bottom: 20%;
-}
+.teksti
+ {
+     position:relative;
+     width: 100%;
+     margin-bottom:20px;
+ }
 
-.ota_yhteytta
+.teksti input,
+.teksti textarea
 {
-     
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.500);
-    
+    width:50%;
+    padding:8px;
+    font-size: 20px;
+    font-weight:300;
+    resize: none;
 }
+
+.teksti textarea
+{
+    padding-bottom:5%;
+}
+
+
 
 .ota_yhteytta h2{
     margin-bottom: 20px;
@@ -324,69 +338,31 @@ textarea{
     display:none;
 }
 
-.laheta_viesti_tausta.nayta{
-
+.ilmoitus.nayta{
+    width: 20%;
+    height: 20%;
+    top:40%;
+    left:40%;
+    z-index: 3;
+    position : fixed;
+    display : flex;
+    justify-content:center;
+    align-items: center;
+    /*flex-direction: column;*/
+    background: white;
+    overflow-y:auto;
 }
 
 
-/*
-
-.ota_yhteytta .nimi
-{   
-    
-    padding-bottom: 50%;
-}
-
-.ota_yhteytta .sukunimi
-{
-    padding-bottom: 2%;
-}
-
-.ota_yhteytta .laheta
-{
-    padding-bottom: 10%;
-}
-
-
-/** ei toimi
-.laheta
-{
-    cursor:pointer;
-}
-
-/*
-.kukat{
-/**
-    padding: 300px;
-    width: 80%;
-    
-    background: url(Puutausta.jpg);
-    background-size: flex;
-   
-    
-}
-
-/*
-.row{
-    display:flex;
-}
-.kuva_1{flex:0.5;
- 
-}
-
-.kuva_2{flex:0.75;
-
-}
-*/
 
 
 @media (max-width: 1600px){
     
 
-    header{
+    header
+    {
         padding: 8px 100px;
-        opacity: 1.0;
-        
+        opacity: 1.0;     
     }
 
     header .navbar
@@ -410,7 +386,8 @@ textarea{
         text-decoration: underline;
     }
     
-    header .navbar.nayta:hover{
+    header .navbar.nayta:hover
+    {
         color: rgb(58, 58, 250);
     }
 
@@ -439,17 +416,21 @@ textarea{
 
     .meista_teksti
     {
-
-    position: relative;
-    font-size: 2.0em;
-    padding-top: 0px;
-    padding-bottom: 100px;
-    padding-right: 0px;
-    padding-left: 0px;
-    
+        position: relative;
+        font-size: 2.0em;
+        padding-top: 0px;
+        padding-bottom: 100px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
-    .kukat_boots{
+    .yhteystiedot_osoite,
+    .yhteystiedot_aukiolo{
+    margin-left: 2%;
+    margin-right:2%;
+    }
+
+    .kukat_laatikot{
         padding-top: 50px;
         font-size: 1.3em;
     }
@@ -457,23 +438,6 @@ textarea{
     .kukka_info_sulje{
         top:-2%;
     }
-/*
-    .kukka_info_teksti{
-        padding:5%;
-        font-size:1em;
-    }
-    
-    /**
-    /**
-.meista
-    {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 150px;
-    padding-left: 150px;
-    }
-*/
-
 
 }
 
@@ -482,13 +446,32 @@ textarea{
         z-index:10;
         color: white;
     }
+
+    .yhteystiedot
+    {
+        padding-bottom:0px;
+        padding-top: 70px;
+    }
+
+    .yhteystiedot_osoite,
+    .yhteystiedot_aukiolo
+    {
+        margin-bottom:4%;
+    
+    }
+    
+    .ota_yhteytta
+    {
+        padding-bottom:4%;
+    }
 }
 
 
 @media (max-width: 840px){
     
   
-    header{
+    header
+    {
         padding-left: 20px;
         padding-right: 20px;
         opacity: 1.0;
@@ -509,48 +492,47 @@ textarea{
 
     }
 
-.etusivu .esittelyteksti
+    .etusivu .esittelyteksti
     {
     
-    color: white;
-    font-weight: 400;
-    font-size: 3em;
-    max-width: 600px;
-    text-decoration : none;
-    position: absolute;
-    bottom: 100px;
-    left: 10px;
-    font-size: 2.5em;
-    
+        color: white;
+        font-weight: 400;
+        font-size: 3em;
+        max-width: 600px;
+        text-decoration : none;
+        position: absolute;
+        bottom: 100px;
+        left: 10px;
+        font-size: 2.5em;
+        
     }
 
-.logo
-{
-    
-    color: white;
-    font-weight: 400;
-    font-size: 2.7em;
-    text-decoration : none;
+    .logo
+    {
+        color: white;
+        font-weight: 400;
+        font-size: 2.7em;
+        text-decoration : none;
+    }
 
-}
+    .meista_teksti
+    {
 
-.meista_teksti
-{
+        position: relative;
+        font-size: 1.5em;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 20px;
+        padding-left: 20px;
+        
+    }
 
-    position: relative;
-    font-size: 1.5em;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 20px;
-    padding-left: 20px;
-    
-}
+    .ota_yhteytta
+    {
+        padding-bottom: 20px;
+    }
 
-.ota_yhteytta{
-    padding-bottom: 20px;
-}
-
-.meista
+    .meista
     {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -559,7 +541,8 @@ textarea{
     }
 
 
-    iframe{
+    iframe
+    {
         width:95%; 
         height:400px; 
     }
@@ -568,9 +551,10 @@ textarea{
         padding:0%;
     }
 
-.kukat_card{
-    padding-bottom:5%;
-}
+    .kukat_card
+    {
+        padding-bottom:5%;
+    }
 
 
 
@@ -579,19 +563,22 @@ textarea{
 
 @media (max-width: 400px){
     
-    iframe{
+    iframe
+    {
         width:95%; 
         height:400px; 
     }
     
-    header{
+    header
+    {
         padding-left: 20px;
         padding-right: 20px;
         opacity: 1.0;
         height: 70px;
     }
     
-    .logo{
+    .logo
+    {
         font-size: 1.7em;
     }
 
@@ -604,30 +591,26 @@ textarea{
         font-size: 0.55em;
         opacity: 0.9;
         display: inline-block;
-        
-        
-
     }
 
-    .selaus{
+    .selaus
+    {
         width: 30px;
         height: 30px;
     }
+    
     .etusivu .esittelyteksti
     {
         font-size: 2em;
     }
 
-
     .meista_teksti
     {
-
     position: relative;
     font-size: 1.2em;
     padding-bottom: 0px;
     padding-right: 10px;
     padding-left: 10px;
-    
     }
 
 
@@ -636,7 +619,8 @@ textarea{
         padding-top: 10px;
     }
 
-    .henkilo_teksti{
+    .henkilo_teksti
+    {
         padding-bottom: 0%;
         padding-right:0%;
         padding-left:0%;
@@ -644,7 +628,27 @@ textarea{
 
     }
 
-    .kukka_info_teksti{
+    .teksti input,
+    .teksti textarea
+    {
+        width:100%;
+
+    }
+
+    .yhteystiedot
+    {
+        padding-bottom:0px;
+        padding-top: 35px;
+    }
+
+    .yhteystiedot_osoite,
+    .yhteystiedot_aukiolo{
+    margin-left: 0%;
+    margin-right:0%;
+    }
+
+    .kukka_info_teksti
+    {
         font-size: 0.8em;
     }
 

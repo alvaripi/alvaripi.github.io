@@ -16,7 +16,7 @@
         <script src="main.js"></script>
     </head>
 <body>
-    <div class= "sivu"> <!-- container-fluid ei mennyt kokoruudulle jostain syystä.-->
+    <div class= "sivu"> 
         <header>
         <a href ="#" class ="logo"> Liikuttava Leinikki</a>
         <div class = "selaus" onclick = navigointi();></div>
@@ -31,23 +31,24 @@
             <div class = "esittelyteksti">
                 <!--<h2>Liikuttava leinikki</h2>-->
                 <p>
-                 Meiltä kauneimmat kukat kaikkiin elämäsi hetkiin. Kukkia juhlaan, arkeen ja mihin ikinä toivotkin.
+                    Meiltä kauneimmat kukat kaikkiin elämäsi hetkiin. Kukkia juhlaan, arkeen ja mihin ikinä toivotkin.
                 </p>
             </div>
         </section> 
         
-
+        <!--    KUKAT    -->
         <section class = "kukat" id = "kukat">
             <div class="container-fluid kukat ">
+                
                 <div class ="row otsikko text-center">
                     <div class= "col-12">
                         <h2 class ="kukat_otsikko">Kukat</h2>
                     </div>
                 </div>
-                <!-- 2. rivi, joka on jaettu kahteen sarakkeeseen.-->
-                <div class="row kukat_boots text-center">
+        
+                <div class="row kukat_laatikot text-center">
             
-                    <!-- 1. 2/4-ruudun levyinen sarake. -->
+                    
                     <div class="col-lg-3 kukat_card">
                         <div class ="card">
                         <div class ="kuva_1">
@@ -61,46 +62,46 @@
                         </div>
                     </div>
             
-                    <!-- 2. 2/4-ruudun levyinen sarake. -->
-                    <div class="col-lg-3 kukat_card bg-light">
-                        <div class ="card">
-                        <div class ="kuva_2">
-                            <img src ="Kukkakimppu2.jpeg" width = "100%" onclick="avaaKukka2();">
-                        </div>
-                        <div class = "card-title"> 
-                            <h2> Hääkimput </h2> 
-                        </div>
-    
-                        <p class ="card-text"> 
-                            Klikkaa kuvaa saadaksesi lisätietoja. </p>
-                        </div>
-                    </div>
-            
-                    <div class="col-lg-3 kukat_card bg-light">
-                        <div class ="card">
-                        <div class ="kuva_3">
-                            <img src ="Kukkakimppu3.jpeg" width = "100%" onclick="avaaKukka3();">
-                        </div>
-                        <div class = "card-title">
-                            <h2> Surukukat </h2>
-                        </div>
-                        <p class ="card-text"> 
-                            Klikkaa kuvaa saadaksesi lisätietoja. </p>
-                        </div>
-                                      
                     
+                    <div class="col-lg-3 kukat_card bg-light">
+                        <div class ="card">
+                            <div class ="kuva_2">
+                                <img src ="Kukkakimppu2.jpeg" width = "100%" onclick="avaaKukka2();">
+                            </div>
+                            <div class = "card-title"> 
+                                <h2> Hääkimput </h2> 
+                            </div>  
+                            <p class ="card-text"> 
+                                Klikkaa kuvaa saadaksesi lisätietoja. 
+                            </p>
+                        </div>
                     </div>
             
                     <div class="col-lg-3 kukat_card bg-light">
                         <div class ="card">
-                        <div class ="kuva_4">
-                            <img src ="Ruusu1.jpeg" width = "100%" onclick="avaaKukka4()">
-                        </div>
-                        <div class = "card-title">
-                            <h2> Yksittäiset kukat </h2>
-                        </div>
-                        <p class ="card-text"> 
-                            Klikkaa kuvaa saadaksesi lisätietoja. </p>
+                            <div class ="kuva_3">
+                                <img src ="Kukkakimppu3.jpeg" width = "100%" onclick="avaaKukka3();">
+                            </div>
+                            <div class = "card-title">
+                                <h2> Surukukat </h2>
+                            </div>
+                            <p class ="card-text"> 
+                                Klikkaa kuvaa saadaksesi lisätietoja. 
+                            </p>
+                        </div>            
+                    </div>
+            
+                    <div class="col-lg-3 kukat_card bg-light">
+                        <div class ="card">
+                            <div class ="kuva_4">
+                                <img src ="Ruusu1.jpeg" width = "100%" onclick="avaaKukka4()">
+                            </div>
+                            <div class = "card-title">
+                                <h2> Yksittäiset kukat </h2>
+                            </div>
+                            <p class ="card-text"> 
+                                Klikkaa kuvaa saadaksesi lisätietoja. 
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -219,62 +220,60 @@
             </div>
     
     
-    
+            
         </section>
             
-        
+        <!--    MEISTÄ   -->
         <section class = "meista" id = "meista">
             <div class="jumbotron taustakuva">
-            <div class = "container-fluid meista">
-            <div class ="row otsikko text-center">
-                <div class= "col-12">
-                    <h2 class = "meista_otsikko">Meistä</h2>
-                </div>
-                <div class= "col-12">
-                    <p class = "meista_teksti">
-                        Olemme vuonna 1997 perustettu Joensuulainen perheyritys. Teemme ammattitaidolla kukkakimppuja 
-                        kaikille elämän osa-alueille. Meiltä saat kukat niin juhlaan kuin suruunkin. 
-                        Työllistämme 10 henkilöä ja kaikilla työntekijöillä on puutarha-alan perustutkinto. Tällä hetkellä toimitusjohtajana
-                        toimii Matti Meikäläinen. 
-                    </p>
+                <div class = "container-fluid meista">
+                    <div class ="row otsikko text-center">
+                        <div class= "col-12">
+                            <h2 class = "meista_otsikko">Meistä</h2>
+                    </div>
+                    <div class= "col-12">
+                        <p class = "meista_teksti">
+                            Olemme vuonna 1997 perustettu Joensuulainen perheyritys. Teemme ammattitaidolla kukkakimppuja 
+                            kaikille elämän osa-alueille. Meiltä saat kukat niin juhlaan kuin suruunkin. 
+                            Työllistämme 10 henkilöä ja kaikilla työntekijöillä on puutarha-alan perustutkinto. Tällä hetkellä toimitusjohtajana
+                            toimii Matti Meikäläinen. 
+                        </p>
                 </div>
 
                 <div class = "container-fluid henkilot ">
-                <div class ="row otsikko text-center">
-                    <div class="col-lg-4">
-                        <h2 class ="henkilo_nimi">Maija Meikäläinen</h2>
-                        <div class ="kuva_henkilosto1">
-                            <img src ="Nainen3 (2).jpg" width = "100%">
-                        </div>
-                        <p class="henkilo_teksti">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <h2 class ="henkilo_nimi">Matti Meikäläinen</h2>
-                        <div class ="kuva_henkilosto1">
-                            <img src ="Toimitusjohtaja (2).jpg" width = "100%">
+                    <div class ="row otsikko text-center">
+                        <div class="col-lg-4">
+                            <h2 class ="henkilo_nimi">Maija Meikäläinen</h2>
+                                <div class ="kuva_henkilosto1">
+                                    <img src ="Nainen3 (2).jpg" width = "100%">
+                                </div>
+                                <p class="henkilo_teksti">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
                         </div>
 
-                        <p class="henkilo_teksti">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </div>
+                        <div class="col-lg-4">
+                            <h2 class ="henkilo_nimi">Matti Meikäläinen</h2>
+                                <div class ="kuva_henkilosto1">
+                                    <img src ="Toimitusjohtaja (2).jpg" width = "100%">
+                                </div>
 
-                    <div class="col-lg-4">
-                        <h2 class ="henkilo_nimi">Merja Mallikas</h2>
-                        <div class ="kuva_henkilosto1">
-                            <img src ="Nainen1 (2).jpg" width = "100%">
+                                <p class="henkilo_teksti">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
                         </div>
-                        <p class="henkilo_teksti">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
+
+                        <div class="col-lg-4">
+                            <h2 class ="henkilo_nimi">Merja Mallikas</h2>
+                                <div class ="kuva_henkilosto1">
+                                    <img src ="Nainen1 (2).jpg" width = "100%">
+                                </div>
+                                <p class="henkilo_teksti">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                        </div>
                     </div>
-
-
                 </div>
-            </div>
-
             </div>
             </div>
         </div>
@@ -287,32 +286,29 @@
          
         <section class = "yhteystiedot" id = "yhteystiedot">
             <div class="container-fluid yhteystiedot ">
-                
-                
+                           
                 <div class="row yhteystiedot_rivi text-center">
                 
-                    <div class="col-lg-4 bg-light">
-                        <div class ="card">
+                    <div class="col-lg-4 yhteystiedot_info">
+                        <div class ="card yhteystiedot_osoite">
                             
-                    <h2> Yhteystiedot </h2>
-                        <p>
-                            Länsikatu 15
-                        </p>
-                        
-                        <p>Joensuu</p>
-                        <p>80100</p> 
-                        <p>Puh: 050123123</p>
-
-                        <h2> Aukioloajat </h2>
-                        
-                        <p>Ma-Pe 9:00-18:00</p>
-                        <p>La 9:00-15:00</p>
-                        <p>Su 10:00-14:00</p>
+                            <h2> Yhteystiedot </h2>
+                            <p>
+                                Länsikatu 15
+                            </p> 
+                            <p>Joensuu</p>
+                            <p>80100</p> 
+                            <p>Puh: 050123123</p>
+                        </div>
+                        <div class ="card yhteystiedot_aukiolo">
+                            <h2> Aukioloajat </h2>
+                            
+                            <p>Ma-Pe 9:00-18:00</p>
+                            <p>La 9:00-15:00</p>
+                            <p>Su 10:00-14:00</p>
+                        </div>
+          
                     </div>
-
-                        
-                    
-                </div>
 
                 <div class="col-lg-4 ota_yhteytta">
                     
@@ -354,16 +350,12 @@
 
             <div class="container-fluid laheta_viesti_tausta">
                 
-                <div class ="row kukat_4_info text-center">
-                    <div class="kukka_info_sulje" onclick="avaaKukka4();">&times;</div>
+                <div class ="row ilmoitus text-center">
+                    <div class="kukka_info_sulje" onclick="viesti();">&times;</div>
                 
                         <p class ="kukka_info_teksti">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit euismod in pellentesque. Arcu cursus vitae congue mauris rhoncus. 
-                            Sit amet nulla facilisi morbi. Diam donec adipiscing tristique risus nec feugiat in fermentum. Vitae sapien pellentesque habitant morbi tristique senectus et. In ante metus dictum at tempor commodo ullamcorper a. 
-                            Integer vitae justo eget magna fermentum iaculis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Massa vitae tortor condimentum lacinia quis vel. Velit egestas dui id ornare arcu odio ut sem nulla. 
-                            Arcu felis bibendum ut tristique et egestas quis. Elit duis tristique sollicitudin nibh sit amet commodo. Ante in nibh mauris cursus mattis molestie. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit. 
-                            Convallis posuere morbi leo urna molestie at elementum. Malesuada fames ac turpis egestas. In iaculis nunc sed augue. In nisl nisi scelerisque eu. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. 
-                            Porttitor leo a diam sollicitudin tempor id eu nisl nunc.
+                            <h1>Kiitos viestistä!</h1>
+                            <p>Olemme yhteydessä sinuun mahdollisimman pian!
                         </p>
                     
                     
