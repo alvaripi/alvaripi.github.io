@@ -105,7 +105,7 @@ header .navbar li a:hover{
     font-family: 'Dancing Script', cursive;
     font-size: 5em;
     color:white;
-    /*position: centered;*/
+    
 }
 
 .meista_teksti
@@ -129,7 +129,7 @@ header .navbar li a:hover{
     padding-top: 120px;
     font-family: 'Dancing Script', cursive;
     font-size: 5em;
-    /*position: centered;*/   
+       
 }
 
 .kukat_laatikot{
@@ -196,9 +196,9 @@ header .navbar li a:hover{
     display : flex;
     justify-content:center;
     align-items: center;
-    /*flex-direction: column;*/
     background: white;
     overflow-y:auto;
+
     
     
 }
@@ -352,24 +352,6 @@ iframe{
     align-items: center;
 }
 
-
-/**
-.ilmoitus.nayta{
-    width: 500px;
-    height: 10%;
-    top:40%;
-    left:40%;
-    z-index: 3;
-    position : fixed;
-    display : flex;
-    justify-content:center;
-    align-items: center;
-    /*flex-direction: column;
-    background-color:white;
-    overflow-y:auto;
-    margin: 0 auto;
-}
-*/
 .viesti h1{
     font: 1.5em;
     position: center;
@@ -474,12 +456,7 @@ iframe{
     .kukka_info_sulje{
         top:-2%;
     }
-/*
-    .ilmoitus.nayta
-    {
-        left:35%;
-    }
-*/
+
 }
 
 @media (max-width: 1200px){
