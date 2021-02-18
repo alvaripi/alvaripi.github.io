@@ -30,9 +30,15 @@ function viesti(){
     document.querySelector(".laheta_viesti_tausta").classList.toggle("nayta");
     document.querySelector(".ilmoitus").classList.toggle("nayta");
     
-    document.getElementById("nimi").value="Nimi";
-    document.getElementById("sahkoposti").value="Sähköposti";
-    document.getElementById("viesti").value=" ";
+    
+    document.getElementsByName("nimi")[0].value="";
+    document.getElementsByName("nimi")[0].placeholder="Nimi";
+    
+    document.getElementsByName("sahkoposti")[0].value="";
+    document.getElementsByName("sahkoposti")[0].placeholder="Sähköposti";
+    
+    document.getElementsByName("viesti")[0].value="";
+
 }
 
 
