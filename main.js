@@ -29,7 +29,10 @@ function avaaKukka4(){
 function viesti(){
     document.querySelector(".laheta_viesti_tausta").classList.toggle("nayta");
     document.querySelector(".ilmoitus").classList.toggle("nayta");
-
+    
+    document.getElementById("nimi").value="Nimi";
+    document.getElementById("sahkoposti").value="Sähköposti";
+    document.getElementById("viesti").value=" ";
 }
 
 
